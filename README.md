@@ -1,0 +1,1 @@
+# maven-troubleshooting-MNG-7705
