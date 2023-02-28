@@ -27,7 +27,7 @@ Delete your local maven repo
 In different windows, run the following commands.
 
 ```
-strace -f -tt -e trace=file ./target/apache-maven-3.9.0/bin/mvn -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f main/pom.xml
-strace -f -tt -e trace=file ./target/apache-maven-3.9.0/bin/mvn -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f branch4/pom.xml
-strace -f -tt -e trace=file ./target/apache-maven-3.9.0/bin/mvn -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f branch5/pom.xml
+strace -f -tt -e trace=file ./target/apache-maven-3.9.0/bin/mvn -V -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f main/pom.xml
+strace -f -tt -e trace=file ./target/apache-maven-3.9.0/bin/mvn -V -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f branch4/pom.xml
+strace -f -tt -e trace=file ./target/apache-maven-3.9.0/bin/mvn -V -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f branch5/pom.xml
 ```
