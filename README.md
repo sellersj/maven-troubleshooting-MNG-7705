@@ -8,9 +8,11 @@ Update your settings file to just be the local host. An example has been supplie
 http://localhost:8081/repository/maven-public/
 
 Populate local nexus with a command like
-`mvn -V -f main/pom.xml -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc`
-`mvn -V -f branch4/pom.xml -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc`
-`mvn -V -f branch5/pom.xml -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc`
+```
+mvn -V -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f main/pom.xml
+mvn -V -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f branch4/pom.xml
+mvn -V -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f branch5/pom.xml
+```
 
 Optionally: download the maven version you want like this
 `mvn -s settings.xml dependency:unpack -Dartifact=org.apache.maven:apache-maven:3.9.0:zip:bin -DoutputDirectory=target`
@@ -24,4 +26,8 @@ Delete your local maven repo
 
 In different windows, run the following commands.
 
-TODO
+```
+strace -f -tt -e trace=file ./target/apache-maven-3.9.0/bin/mvn -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f main/pom.xml
+strace -f -tt -e trace=file ./target/apache-maven-3.9.0/bin/mvn -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f branch4/pom.xml
+strace -f -tt -e trace=file ./target/apache-maven-3.9.0/bin/mvn -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc -f branch5/pom.xml
+```
