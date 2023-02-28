@@ -9,3 +9,5 @@ http://localhost:8081/repository/maven-public/
 
 Populate local nexus with a command like
 `mvn -V -f main/pom.xml -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc`
+`mvn -V -f branch4/pom.xml -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc`
+`mvn -V -f branch5/pom.xml -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc`
