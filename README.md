@@ -13,9 +13,9 @@ Populate local nexus with a command like
 `mvn -V -f branch5/pom.xml -s settings.xml dependency:sources  dependency:resolve -Dclassifier=javadoc`
 
 Optionally: download the maven version you want like this
-`mvn -s settings.xml dependency:unpack -Dartifact=org.apache.maven:apache-maven:3.9.0:zip:bin -DoutputDirectory=.`
+`mvn -s settings.xml dependency:unpack -Dartifact=org.apache.maven:apache-maven:3.9.0:zip:bin -DoutputDirectory=target`
 If you do this, when the following maven commands would be along the lines of
-`./apache-maven-3.9.0/bin/mvn ...`
+`./target/apache-maven-3.9.0/bin/mvn ...`
 
 ## To reproduce the issue
 
