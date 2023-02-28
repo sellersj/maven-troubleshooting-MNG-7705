@@ -903,47 +903,6 @@
       <artifactId>json-smart</artifactId>
       <version>2.3.1</version>
     </dependency>
-    <!-- legacy bouncycastle groupId -->
-    <dependency>
-      <groupId>bouncycastle</groupId>
-      <artifactId>bcmail-jdk14</artifactId>
-      <version>${bouncycastleLegacyVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>bouncycastle</groupId>
-      <artifactId>bcmail-jdk15</artifactId>
-      <version>${bouncycastleLegacyVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>bouncycastle</groupId>
-      <artifactId>bcmail-jdk16</artifactId>
-      <version>${bouncycastleLegacyVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>bouncycastle</groupId>
-      <artifactId>bcpg-jdk15</artifactId>
-      <version>${bouncycastleLegacyVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>bouncycastle</groupId>
-      <artifactId>bcprov-jdk14</artifactId>
-      <version>${bouncycastleLegacyVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>bouncycastle</groupId>
-      <artifactId>bcprov-jdk15</artifactId>
-      <version>${bouncycastleLegacyVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>bouncycastle</groupId>
-      <artifactId>bcprov-jdk16</artifactId>
-      <version>${bouncycastleLegacyVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>bouncycastle</groupId>
-      <artifactId>bctsp-jdk14</artifactId>
-      <version>${bouncycastleLegacyVersion}</version>
-    </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-ext-jdk15on</artifactId>
